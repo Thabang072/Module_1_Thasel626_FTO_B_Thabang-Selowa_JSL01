@@ -5,6 +5,11 @@ function validateSyntax() {
 
     // TODO: Write your validation logic here
     let result;
+    if (pattern.test(input)) {
+        result = "Valid Syntax \u{1F600}";
+    } else {
+        result = "Invalid Syntax  \u{1F612}";
+    }
 
     // Check if input starts with 'pet_' and followed by alphanumeric character
         document.getElementById('result').innerText = result;
