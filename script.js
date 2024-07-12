@@ -1,11 +1,11 @@
 function validateSyntax() {
     let input = document.getElementById('petInput').value;
     // Validation logic goes here
-    let pattern = /^pet_[a-zA-Z0-9]+$/;
+    let petName = /^pet_[a-zA-Z0-9]+$/;
 
     // TODO: Write your validation logic here
     let result;
-    if (pattern.test(input)) {
+    if (petName.test(input)) {
         result = "Valid Syntax \u{1F600}";
     } else {
         result = "Invalid Syntax  \u{1F612}";
